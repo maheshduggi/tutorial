@@ -1,0 +1,25 @@
+create database opinionmining;
+use opinionmining;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(12),
+email varchar(30),
+address varchar(40),
+status varchar(200));
+
+create table post(username varchar(30),
+post_id varchar(50),
+image varchar(100),
+name varchar(100),
+topic varchar(100),
+description varchar(100));
+
+create table comment(post_id varchar(30),
+username varchar(30),
+comment varchar(200),
+rate varchar(10));
+
+
+
+
